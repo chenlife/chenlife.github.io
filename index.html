@@ -99,9 +99,22 @@ body, html {
 			<h1 class="logo-caption"><span class="tweak">L</span>ogin</h1>
 		</div><!-- /.logo -->
 		<div class="controls">
-			<input type="text" name="username" placeholder="Username" class="form-control" />
-			<input type="text" name="username" placeholder="Password" class="form-control" />
-			<button type="button" class="btn btn-default btn-block btn-custom">Login</button>
+			<input type="text" name="username" id="username" placeholder="The Username is similar your Email(8 bits)" class="form-control" />
+			<input type="password" name="password" id="password" placeholder="The Password is your birthday(8 bits)" class="form-control" />
+			<button type="submit" onclick="checkpassword()" class="btn btn-default btn-block btn-custom">Login</button>
+			<script>
+        		function checkpassword(){
+        	      var name="chenlife";
+        		  var pwd="1006";
+        		  var inname=document.getElementById("username").value;
+        		  var inpwd=document.getElementById("password").value;
+       			  if(name == inname && pwd == inpwd){  //判断一下是否一样
+           		    window.location.href="http://krzer.com";
+    			  }
+    			  else
+    			  	alert("你是不是傻？实在不行请找小K帮忙~");
+				}
+			</script>
 		</div><!-- /.controls -->
 	</div><!-- /#login-box -->
 </div><!-- /.container -->
