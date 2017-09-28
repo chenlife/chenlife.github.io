@@ -7,6 +7,11 @@
     <title>ChenLiFe Login Screen</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="bootstrap.min.css" rel="stylesheet">
+    <div style="display:none"; class="music">
+    	<audio controls="controls" autoplay="autoplay" loop=-1 type="hide">
+			<source src="http://7xolkd.com1.z0.glb.clouddn.com/BGM1.mp3" type="audio/mp3" />
+		</audio>
+	</div>
     <style type="text/css">
         @import url('Nunito');
 @import url('Poiret+One');
@@ -105,14 +110,14 @@ body, html {
 			<script>
         		function checkpassword(){
         	      var name="chenlife";
-        		  var pwd="1006";
+        		  var pwd="19951006";
         		  var inname=document.getElementById("username").value;
         		  var inpwd=document.getElementById("password").value;
        			  if(name == inname && pwd == inpwd){  //判断一下是否一样
-           		    window.location.href="http://krzer.com";
+           		    window.location.href="http://birthday-of-chenlife.krzer.com/happy-birthday/";
     			  }
     			  else
-    			  	alert("你是不是傻？实在不行请找小K帮忙~");
+    			  	alert("你是不是傻？有困难请找小K~");
 				}
 			</script>
 		</div><!-- /.controls -->
@@ -121,7 +126,7 @@ body, html {
 <div id="particles-js"></div>
 <!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>-->
 <script type="text/javascript">
-$.getScript("https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js", function(){
+$.getScript("https://cdn.bootcss.com/particles.js/2.0.0/particles.min.js", function(){
     particlesJS('particles-js',
       {
         "particles": {
